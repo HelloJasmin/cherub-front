@@ -21,6 +21,15 @@
   },
   "homepage": "https://github.com/961771834/react-ssr-demo#readme",
   "devDependencies": {
-    "webpack": "^4.1.1"
+    "clean-webpack-plugin": "^0.1.19",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.0.6",
+    "uglifyjs-webpack-plugin": "^1.2.3",
+    "webpack": "^4.1.1",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }
