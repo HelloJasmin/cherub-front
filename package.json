@@ -4,7 +4,9 @@
   "description": "react ssr",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production ./webpack/webpack.config.js",
+    "start": "webpack-dev-server --mode development --progress --hot --hotOnly --config ./webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,11 +23,17 @@
   },
   "homepage": "https://github.com/961771834/react-ssr-demo#readme",
   "devDependencies": {
+    "babel-loader": "^7.1.4",
     "clean-webpack-plugin": "^0.1.19",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "css-loader": "^0.28.10",
+    "extract-loader": "^2.0.0",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.0.6",
-    "uglifyjs-webpack-plugin": "^1.2.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
     "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1",
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
